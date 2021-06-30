@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>检测是否为数组的方法</title>
+    <script>
+        function reverse(arr) {
+           if (arr instanceof Array) {
+            var newArr = [];
+            for (var i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i];
+            }
+            return newArr;
+           }else {
+               return '出错啦，非数组格式请重来';
+           }
+        }
+        var arr1 = reverse([3, 5, 67, 7, 0]);
+        var arr2 = reverse(1,2,3);
+        console.log(arr1);
+        console.log(arr2);
+        // 检测是否为数组
+        // (1)instanceof 运算符
+        var arr = [];
+        var obj = {};
+        console.log(arr instanceof Array);
+        console.log(obj instanceof Array);
+        // (2)Array.isArray(参数) H5新增的 ie9版本以上支持
+        console.log(Array.isArray(arr));
+        console.log(Array.isArray(obj));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

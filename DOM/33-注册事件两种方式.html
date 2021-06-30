@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册事件两种方式</title>
+</head>
+<body>
+    <button>传统注册方式</button>
+    <button>方法监听注册方式</button>
+    <button>ie9 attachEvent</button>
+    <script>
+        var btns = document.querySelectorAll('button');
+        // 1.传统注册方式
+        btns[0].onclick = function() {
+            alert('我具有唯一性哦');
+        }
+        btns[0].onclick = function() {
+            alert('我会覆盖前面的');
+        }
+        // 2.事件监听注册事件 addEventListener 里面的事件类型是字符串，加引号，注不要加on
+        btns[1].addEventListener('click', function(){
+            alert('hi,ie9以上的浏览器才配得上我哦');
+        })
+        btns[1].addEventListener('click', function(){
+            alert('W3C标准');
+        })
+        // 3.attachEvent ie9以前的版本支持
+        btns[2].attachEvent('onclick', function(){
+            alert(111);
+        })
+    </script>
+</body>
+</html>

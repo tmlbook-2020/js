@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查找字符串中某个字符出现的次数</title>
+    <script>
+        var str = 'abcdacdadcvfa';
+        var index = str.indexOf('a');
+        var num = 0;
+        while (index !== -1) {
+            console.log(index);
+            num++;
+            index = str.indexOf('a', index + 1);
+        }
+        console.log('a出现的次数是：' + num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

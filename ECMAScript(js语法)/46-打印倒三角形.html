@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打印正倒三角形</title>
+    <script>
+        // 1.打印倒三角形
+        var str = '';
+        for (var i = 1; i <= 10; i++) {
+            for (var j = i; j <= 10; j++) {
+                str  = str + '★';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+        console.log('------------------------');
+        // 2.打印正三角形 多种思路 也可以采取 m <= n m和n的初始值都是1
+        var str1 = '';
+        for (var m = 1; m <= 10; m++) {
+            for (var n = 10 - m; n <= 9; n++) {
+                str1  = str1 + '★';
+            }
+            str1 = str1 + '\n';
+        }
+        console.log(str1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

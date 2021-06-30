@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arguments的使用</title>
+    <script>
+        // arguments的使用 只有函数才有arguments对象。而且是每个函数都内置好的
+        function fn1() {
+            console.log(arguments);
+            console.log(arguments.length);
+            console.log(arguments[1]);
+            // 可以按照数组的方式遍历arguments
+            for (var i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+        fn1(1, 2, 3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

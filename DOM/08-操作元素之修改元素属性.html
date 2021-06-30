@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作元素之修改元素属性</title>
+</head>
+<body>
+    <button id="hqg">花千骨</button>
+    <button id="tb">糖宝</button>
+    <img src="../images/hqg.jpg" alt="" title=""  width="300px" height="200px">
+    <script>
+        //  修改元素属性 src title
+        // 1.获取元素
+        var hqg = document.getElementById('hqg');
+        var tb = document.getElementById('tb');
+        var img = document.querySelector('img')
+        // 2.事件类型，也称注册事件      处理机制
+        tb.onclick = function() {
+            img.src = '../images/tb.jpg';
+            img.title = '糖宝';
+        }
+        hqg.onclick = function() {
+            img.src = '../images/hqg.jpg';
+            img.title = '花千骨';
+        }
+    </script>
+   
+</body>
+</html>

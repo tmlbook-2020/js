@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组索引的方法</title>
+    <script>
+        // 返回数组索引号的方法 同根据字符返回位置
+        // (1)indexOf(数组元素,[开始的位置]) 只返回第一个满足条件的索引号，如果找不到，则返回-1 从前边开始查找
+        var arr = ['red', 'green', 'blue', 'pink', 'blue'];
+        console.log(arr.indexOf('blue'));
+        console.log(arr.indexOf('blue', 4));
+        // (2)lastIndexOf() 从后边开始查找  
+        console.log(arr.lastIndexOf('black'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

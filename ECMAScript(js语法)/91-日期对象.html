@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日期函数</title>
+    <script>
+        //date() 日期函数  是一个构造函数，必须使用new来调用创建日期对象
+        var date = new Date();//没有参数的话返回的是系统当前的时间
+        console.log(date);
+        // 有参数的话 可以是数字型的 2021, 06, 23 或者字符串型'2021-6-23 20:14:8'
+        var date1 = new Date(2021, 06, 23);
+        console.log(date1);//返回的是7月 不是6月
+        var date2 = new Date('2021-6-23 20:13:8');
+        console.log(date2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

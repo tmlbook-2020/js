@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用构造函数创建对象</title>
+    <script>
+        // 构造函数的语法格式：
+        // function 构造函数名() {//构造函数名名字首字母要大写
+        //     this.属性 = 值;
+        //     this.方法 = function() {}
+        // }
+        // new 构造函数名();//必须有关键字new
+        function Star(name, gender, age){
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+        }
+        var lili = new Star('lili', '女', 18);
+        console.log(lili.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

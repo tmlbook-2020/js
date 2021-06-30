@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通过className更改元素样式</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .change {
+            width: 250px;
+            height: 250px;
+            background-color: purple;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>文本</div>
+    <script>
+        var div = document.querySelector('div');
+        div.onclick = function() {
+            //className适合样式较多或者功能复杂的情况下
+            this.className = 'change';
+        }
+    </script>
+</body>
+</html>
